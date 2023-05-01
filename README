@@ -1,0 +1,28 @@
+Make a MERN stack banking application. The MERN stack consists of:
+
+MongoDB — document database (backend)
+Express(.js) — Node.js server-side web framework (Middle Tier)
+React(.js) — a client-side JavaScript framework (front end)
+Node(.js) — the premier JavaScript web server platform (Middle Tier)
+
+
+This banking application has the ability to create an account, login with email and password or google account (and logout) via firebase authentication, withdraw, deposit, see balance.
+
+1. Download the files or clone this repository 
+
+2. In the public folder in the context.js file, update the firebaseConfig with your own account info:
+var firebaseConfig = {
+  apiKey: "",
+  authDomain: "",
+  databaseURL: "",
+  projectId: "",
+  storageBucket: "",
+  messagingSenderId: "",
+  appId: ""
+};
+
+3. Open the root directory in VS code
+4. Right click on the Dockerfile and select "build image"
+5. Open the VS code terminal and run:
+	docker run -dp 3000:3000 badbankluers  
+
